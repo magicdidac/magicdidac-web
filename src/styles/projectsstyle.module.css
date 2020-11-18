@@ -1,0 +1,13 @@
+.projectcard{
+    overflow: hidden;
+}
+
+.projectcard img {
+    width: 100%;
+}
+
+.projectcard p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}

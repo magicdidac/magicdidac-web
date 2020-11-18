@@ -1,0 +1,28 @@
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+.centerText {
+    text-align: center;
+}
+
+.grid2columns{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5em;
+}
+
+.title{
+  font-size: large;
+  font-weight: 700;
+}
+
+p{
+  font-size: small;
+}

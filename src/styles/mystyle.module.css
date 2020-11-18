@@ -1,0 +1,71 @@
+.projectcontainer{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.projectpart{
+    display: inline-block;
+    margin-top: 7vw;
+    margin-bottom: 3vw;
+}
+
+.projectdescription{
+    width: 50%;
+    margin-left: 50%;
+    align-content: center;
+}
+
+.projectdescriptiontext{
+    font-size: medium;
+    text-align: justify;
+}
+
+.gameImage{
+    width: 40vw;
+    margin-left: 30vw;
+    float: left;
+}
+
+.gameImage > img {
+    width: 100%;
+}
+
+.carousel{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s;
+}
+
+.photoButton{
+    cursor: pointer !important;
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+.photoButton:focus{
+    background: none;
+}
+
+i {
+    font-size: 5vw !important;
+    z-index: 5;
+}
+
+.leftControl{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: 20vw;
+    bottom: 13.5vw;
+}
+
+.rightControl{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: 75vw;
+    bottom: 18.5vw;
+}
