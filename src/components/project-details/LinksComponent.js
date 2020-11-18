@@ -24,7 +24,6 @@ const Links = props => {
     const difference = (100*(6-linksNum))/12;
     var calculatedMargin = difference+"%";
 
-
     return (
         <div className="container section">
             <div className="card z-depth-0">
