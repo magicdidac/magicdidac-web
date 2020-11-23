@@ -16,6 +16,11 @@
     align-content: center;
 }
 
+.projectdescriptionmobile{
+    width: 100%;
+    align-content: center;
+}
+
 .projectdescriptiontext{
     font-size: medium;
     text-align: justify;
@@ -27,7 +32,16 @@
     float: left;
 }
 
+
 .gameImage > img {
+    width: 100%;
+}
+
+.gameImageMobile{
+    width: 95vw;
+    padding-left: 5vw;
+}
+.gameImageMobile > img {
     width: 100%;
 }
 
@@ -62,10 +76,26 @@ i {
     bottom: 13.5vw;
 }
 
+.leftControlMobile{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: 2vw;
+    bottom: 23.5vw;
+}
+
 .rightControl{
     width: 5vw;
     height: 5vw;
     position: relative;
     left: 75vw;
     bottom: 18.5vw;
+}
+
+.rightControlMobile{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: 92vw;
+    bottom: 28.5vw;
 }

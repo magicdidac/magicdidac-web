@@ -2,6 +2,7 @@ import React from 'react';
 import commonStyles from '../../styles/commonstyle.module.css';
 import ProjectSummary from './ProjectSummary'
 import Footer from '../Footer';
+import { isMobile } from "react-device-detect";
 
 class Projects extends React.Component{
 
@@ -40,6 +41,7 @@ class Projects extends React.Component{
                         </div>
                         <div className="card-action"/>
 
+                        {!isMobile ?
                         <div className={commonStyles.grid2columns}>
 
                             {this.getProjects().map((project) => {
@@ -53,6 +55,21 @@ class Projects extends React.Component{
                                 )
                             })}
                         </div>
+                        :
+                        <div className={commonStyles.gridOnecolumns}>
+
+                            {this.getProjects().map((project) => {
+                                return(
+                                <ProjectSummary
+                                key={project.id} 
+                                id={project.id}
+                                title={project.title}
+                                description={project.description}
+                                photo={project.banner}/>
+                                )
+                            })}
+                        </div>
+                        }
 
                     </div>
                 </div>

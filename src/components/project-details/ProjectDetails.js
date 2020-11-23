@@ -6,6 +6,8 @@ import Links from './LinksComponent';
 import Footer from '../Footer';
 import DescriptionComponent from '../common/DescriptionComponent';
 import styles from '../../styles/mystyle.module.css';
+import { isMobile } from "react-device-detect";
+
 
 class ProjectDetails extends React.Component{
 
@@ -86,7 +88,7 @@ class ProjectDetails extends React.Component{
                             <p>{(this.state && this.state.project) ? this.state.project.type: ""}</p>
                         </div>
                         <div className="card-action"/>
-
+                        { !isMobile ?
                         <ReactPlayer
                         width="40vw"
                         height="22.5vw"
@@ -95,9 +97,19 @@ class ProjectDetails extends React.Component{
                         controls
                         url={(this.state && this.state.project) ? this.state.project.video: ""}
                         />
+                        :
+                        <ReactPlayer
+                        width="100%"
+                        height="50.5vw"
+                        playing
+                        muted
+                        controls
+                        url={(this.state && this.state.project) ? this.state.project.video: ""}
+                        />
+                        }
 
                         <div className={styles.projectpart}>
-                            <div className={styles.projectdescription}>
+                            <div className={isMobile ? styles.projectdescriptionmobile : styles.projectdescription}>
                                 <DescriptionComponent
                                 description={(this.state && this.state.project) ? this.state.project.description: ""}/>
                             </div>
@@ -109,8 +121,10 @@ class ProjectDetails extends React.Component{
                 <PhotoGalleryView
                 photos={this.getPhotos()}/>
                 
-                <Links
-                links={this.getLinks()}/>
+                { !isMobile &&
+                    <Links
+                    links={this.getLinks()}/>
+                }
 
                 <Footer />
             </div>
