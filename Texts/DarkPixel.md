@@ -9,5 +9,5 @@ Dark Pixel Adventures es mi primera participación en la Ludum Dare (40) y el te
 Dark Pixel Adventures is my first participation in Ludum Dare (40) and the theme that came out was: The more you have, the worse it is.
 
 Link video: https://youtu.be/zRKp21kTRDs 
-Fotos: https://magicdvstudio.com/mygames/darkpixeladventures/01.jpg
+Fotos: https://magicdidac.com/web/darkpixeladventures_01.jpg
 Hasta el 05

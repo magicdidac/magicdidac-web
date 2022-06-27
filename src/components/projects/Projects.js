@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
 class Projects extends React.Component{
 
     componentDidMount(){
-        fetch('https://magicdvstudio.com/mygames/php/getAllProjects.php', {
+        fetch('https://magicdidac.com/web/php/getAllProjects.php', {
             method: 'post',
             header:{
                 'Accept': 'application/json',
