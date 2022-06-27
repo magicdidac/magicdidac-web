@@ -8,7 +8,7 @@ export default class About extends Component {
 
     componentDidMount(){
         //GET DETAILS
-        fetch('https://magicdvstudio.com/mygames/php/getAboutInfo.php', {
+        fetch('https://magicdidac.com/web/php/getAboutInfo.php', {
             method: 'post',
             header:{
                 'Accept': 'application/json',

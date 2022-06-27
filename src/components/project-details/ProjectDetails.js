@@ -13,7 +13,7 @@ class ProjectDetails extends React.Component{
 
     componentDidMount(){
         //GET DETAILS
-        fetch('https://magicdvstudio.com/mygames/php/getProjectDetailsById.php', {
+        fetch('https://magicdidac.com/web/php/getProjectDetailsById.php', {
             method: 'post',
             header:{
                 'Accept': 'application/json',
@@ -31,7 +31,7 @@ class ProjectDetails extends React.Component{
             })
         
         //GET PHOTOS
-        fetch('https://magicdvstudio.com/mygames/php/getProjectPhotosById.php', {
+        fetch('https://magicdidac.com/web/php/getProjectPhotosById.php', {
             method: 'post',
             header:{
                 'Accept': 'application/json',
